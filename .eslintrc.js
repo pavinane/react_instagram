@@ -21,6 +21,8 @@ module.exports = {
     "react/prefer-stateless-function": 0,
     "max-classes-per-file": 0,
     "import/no-named-as-default": 0,
-    "import/no-named-as-default-member": 0
+    "import/no-named-as-default-member": 0,
+    quotes: 0,
+    "import/no-unresolved": 0
   }
 };

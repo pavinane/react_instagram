@@ -1,0 +1,26 @@
+.icon-clck {
+  //   background: red;
+  display: grid;
+  grid-template-columns: 400px 90px;
+  font-size: 25px;
+  .ic-1 {
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    .like {
+      i.fas.fa-heart {
+        color: red;
+      }
+    }
+    .share {
+      .option {
+        width: 400px;
+        i {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .ic-2 {
+    justify-self: end;
+  }
+}

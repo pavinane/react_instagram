@@ -16,12 +16,14 @@ class Share extends React.Component {
           }
           onClick={this.showIc}
         ></i>
-        {showIcon && (
+        {/* {showIcon && (
           <div className="option">
             <i class="fab fa-whatsapp"></i>
             <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fas fa-link"></i>
           </div>
-        )}
+        )} */}
       </div>
     );
   }

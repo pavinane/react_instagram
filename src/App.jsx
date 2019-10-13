@@ -1,14 +1,12 @@
-import React from 'react';
-import Title from './Title';
-import Post from './Post';
+import React from "react";
 
-import './App.scss';
+import Insta2 from "./Up1";
+import "./App.scss";
 
 const App = () => (
   <div className="app">
-    <div className="upload">
-      <Title />
-      <Post />
+    <div className="load">
+      <Insta2 />
     </div>
   </div>
 );
