@@ -1,0 +1,34 @@
+.g-3 {
+  width: 1400px;
+  height: 60px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 0 auto;
+  .tech {
+    align-self: center;
+
+    ul {
+      li {
+        list-style: none;
+        float: left;
+        margin: 0 10px;
+        text-transform: uppercase;
+        color: #013569;
+        font-weight: bold;
+        cursor: pointer;
+        font-family: " Roboto", sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+      }
+    }
+  }
+  .indus {
+    // margin: 0 10px;
+
+    color: #999999;
+    align-self: center;
+    justify-self: end;
+    font-size: 10px;
+    font-family: " Roboto", sans-serif;
+  }
+}

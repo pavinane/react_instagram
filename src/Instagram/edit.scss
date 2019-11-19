@@ -1,0 +1,622 @@
+.edit {
+  .edt-2 {
+    width: 1150px;
+
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+
+    margin-top: 70px;
+    border: 1px solid rgb(223, 218, 218);
+    border-radius: 10px;
+    .edt-prof {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      height: 600px;
+      row-gap: 20px;
+      a {
+        text-decoration: none;
+        .ep-cd {
+          background: #fff;
+          // border-left: 3px solid rgb(136, 131, 131);
+          height: 55px;
+          h2 {
+            font-family: " Roboto", sans-serif;
+            font-weight: normal;
+            font-size: 20px;
+            position: relative;
+            top: 17px;
+            left: 20px;
+            color: gray;
+          }
+        }
+        .ep-cd:hover {
+          border-left: 3px solid rgb(136, 131, 131);
+          background: #fafafa;
+          height: 55px;
+          h2 {
+            color: black;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .lf-co {
+      border-left: 1px solid rgb(223, 218, 218);
+
+      .ps {
+        position: relative;
+        top: 40px;
+        height: 800px;
+
+        .crd-1 {
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+          width: 800px;
+          margin: 0 auto;
+          grid-gap: 20px;
+          img {
+            width: 60px;
+            border-radius: 50%;
+            position: relative;
+            left: 170px;
+          }
+          h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+
+            span {
+              font-size: 17px;
+              color: blue;
+            }
+          }
+        }
+        .card-2 {
+          display: grid;
+          grid-template-columns: 230px 2fr;
+          width: 800px;
+          margin: 0 auto;
+          grid-gap: 20px;
+          height: 665px;
+          position: relative;
+          top: 20px;
+          .aa {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 20px;
+            height: 575px;
+            align-items: center;
+            h2 {
+              text-align: end;
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 20px;
+            }
+          }
+          .form-input {
+            form {
+              .input-form {
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-gap: 20px;
+                width: 400px;
+                height: 615px;
+                input {
+                  height: 40px;
+                  border-radius: 5px;
+                  border: 1px solid gray;
+                }
+                input[placeholder] {
+                  font-size: 18px;
+                  padding: 0 10px;
+                  text-transform: capitalize;
+                }
+
+                h3 {
+                  align-self: center;
+                  font-family: Arial, Helvetica, sans-serif;
+                  color: gray;
+                }
+                p {
+                  font-size: 20px;
+                  padding: 5px 0;
+                  font-family: Arial, Helvetica, sans-serif;
+                }
+                .in1 {
+                  display: grid;
+                  grid-template-columns: 30px 250px;
+                  line-height: 20px;
+                  height: 35px;
+                  font-size: 16px;
+                  align-items: center;
+                  font-family: Arial, Helvetica, sans-serif;
+                  input {
+                    width: 20px;
+                  }
+                  span {
+                    color: blue;
+                  }
+                }
+                .but-in {
+                  display: grid;
+                  grid-template-columns: 1fr 2fr;
+                  position: relative;
+                  top: 30px;
+                  align-items: center;
+                  button {
+                    width: 80px;
+                    height: 40px;
+                    border-radius: 5px;
+                    color: white;
+                    background-color: #67adee;
+                    font-size: 17px;
+                    font-family: Arial, Helvetica, sans-serif;
+                  }
+                  h4 {
+                    color: #3897f0;
+                    font-family: Arial, Helvetica, sans-serif;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .ch-ps {
+        position: relative;
+        top: 50px;
+        .chnge {
+          width: 750px;
+          margin: 0 auto;
+
+          display: grid;
+          grid-template-columns: 1fr 3fr;
+
+          grid-gap: 20px;
+          .chnge-pr {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-gap: 40px;
+            row-gap: 40px;
+            width: 200px;
+            img {
+              width: 50px;
+              border-radius: 50%;
+              justify-self: center;
+              align-self: center;
+            }
+            h2 {
+              font-family: Arial, Helvetica, sans-serif;
+              text-transform: capitalize;
+              // align-self: center;
+              text-align: center;
+              // font-weight: normal;
+              font-size: 20px;
+            }
+          }
+          .chn-names {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+
+            row-gap: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+
+            width: 450px;
+            h2 {
+              font-size: 30px;
+              align-items: center;
+              font-weight: normal;
+            }
+            input {
+              height: 40px;
+              background: rgb(236, 233, 233);
+              border: none;
+              border: 1px solid rgb(196, 189, 189);
+              border-radius: 5px;
+              outline: none;
+            }
+          }
+        }
+        .chn-but {
+          width: 300px;
+
+          position: relative;
+          margin-left: 270px;
+          top: 20px;
+          button {
+            width: 170px;
+            height: 45px;
+            text-transform: capitalize;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            color: white;
+            background-color: #a8caeb;
+            border: 0.5px solid silver;
+            border-radius: 10px;
+          }
+          h2 {
+            position: relative;
+            top: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: capitalize;
+            font-size: 18px;
+            color: #3897f0;
+          }
+        }
+      }
+      .app-web {
+        position: relative;
+        top: 50px;
+        left: 20px;
+        width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        grid-gap: 30px;
+        h1 {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 35px;
+          font-weight: normal;
+        }
+        .app-1 {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+
+          height: 80px;
+          text-transform: capitalize;
+
+          .a {
+            h2 {
+              text-align: center;
+              justify-self: center;
+              margin: 25px 0;
+            }
+            border-bottom: 1px solid rgba(8, 8, 8, 0.959);
+          }
+          .a:hover {
+            color: gray;
+            border-bottom: 1px solid rgba(145, 140, 140, 0.363);
+          }
+          .b {
+            color: gray;
+            // border-bottom: 1px solid rgba(8, 8, 8, 0.959);
+            h2 {
+              text-align: center;
+              justify-self: center;
+              margin: 25px 0;
+            }
+            border-bottom: 1px solid rgba(145, 140, 140, 0.363);
+          }
+          .b:hover {
+            color: black;
+            border-bottom: 1px solid rgba(8, 8, 8, 0.959);
+          }
+        }
+        p {
+          font-size: 21px;
+        }
+        .app-2 {
+          font-family: Arial, Helvetica, sans-serif;
+
+          h3 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 22px;
+            color: gray;
+          }
+          small {
+            font-size: 15px;
+            color: gray;
+            span {
+              color: blue;
+            }
+          }
+        }
+        button {
+          width: 120px;
+          height: 50px;
+          font-size: 20px;
+          color: white;
+          background-color: #3897f0;
+          border: none;
+          border-radius: 5px;
+        }
+      }
+      .email {
+        // width: 700px;
+        position: relative;
+        top: 40px;
+        margin-left: 80px;
+        font-family: Arial, Helvetica, sans-serif;
+        // font-size: 15px;
+        h1 {
+          font-weight: normal;
+        }
+        .email-names {
+          position: relative;
+          top: 20px;
+          .checkbox-email {
+            width: 500px;
+            padding: 20px 0;
+            .email-cd {
+              display: grid;
+              grid-template-columns: 20px 2fr;
+              grid-gap: 20px;
+              font-size: 12px;
+
+              input {
+                width: 20px;
+                height: 20px;
+              }
+            }
+            p {
+              position: relative;
+              top: 10px;
+              color: gray;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .manage {
+        width: 700px;
+        margin: 50px auto;
+        h1 {
+          font-size: 30px;
+          text-transform: capitalize;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: normal;
+        }
+        p {
+          margin: 20px 0;
+          padding: 20px 0;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 20px;
+        }
+        .man-card {
+          display: grid;
+          grid-template-rows: 1fr 1fr;
+          font-size: 20px;
+          grid-gap: 30px;
+          .syn {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            border-bottom: 1px solid lightgray;
+            align-items: center;
+
+            h1 {
+              font-size: 20px;
+              font-weight: bold;
+            }
+            h2 {
+              text-align: end;
+              text-transform: capitalize;
+              color: #84bbee;
+              font-size: 18px;
+            }
+          }
+          p {
+            width: 700px;
+            border-bottom: 1px solid lightgray;
+            justify-self: start;
+          }
+          button {
+            width: 120px;
+            height: 40px;
+            font-size: 20px;
+            text-transform: capitalize;
+            color: white;
+            background-color: #89b8e7;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .em-ins {
+        width: 700px;
+        margin: 50px auto;
+
+        h1 {
+          font-size: 30px;
+          text-transform: capitalize;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: normal;
+        }
+        .email-card {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          position: relative;
+          top: 50px;
+          height: 50px;
+          text-align: center;
+          h1 {
+            font-size: 18px;
+            font-weight: bolder;
+            text-transform: uppercase;
+          }
+          .sec {
+            border-bottom: 1px solid black;
+          }
+          .sec:hover {
+            border-bottom: 1px solid gray;
+            color: gray;
+          }
+          .oth {
+            color: gray;
+            border-bottom: 1px solid gray;
+          }
+          .oth:hover {
+            border-bottom: 1px solid black;
+            color: black;
+          }
+        }
+        p {
+          position: relative;
+          top: 100px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 22px;
+        }
+      }
+      .login {
+        width: 700px;
+        margin: 40px auto;
+        line-height: 30px;
+
+        h1 {
+          font-weight: normal;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        h2 {
+          font-size: 22px;
+          padding: 30px 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .location {
+          display: grid;
+          grid-template-columns: 50px 3fr 1fr;
+          border-bottom: 1px solid rgb(192, 191, 191);
+          align-items: center;
+          height: 100px;
+          i {
+            color: gray;
+            font-size: 30px;
+          }
+          .lov-names {
+            p {
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 22px;
+            }
+            small {
+              font-size: 17px;
+              font-family: Arial, Helvetica, sans-serif;
+              float: left;
+              color: gray;
+            }
+          }
+        }
+      }
+      .privacy {
+        width: 700px;
+        margin: 50px auto;
+        .secu {
+          display: grid;
+          grid-gap: 25px;
+          .pri {
+            // display: grid;
+            // grid-template-rows: 1fr 1fr;
+            .secu-card {
+              border-bottom: 1px solid rgb(201, 196, 196);
+              height: 175px;
+              display: grid;
+
+              h1 {
+                font-size: 27px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: normal;
+              }
+              .in-pri {
+                display: grid;
+                grid-template-columns: 30px 200px;
+                align-items: center;
+                input {
+                  width: 20px;
+                  height: 30px;
+                }
+                h2 {
+                  font-size: 17px;
+                  font-family: Arial, Helvetica, sans-serif;
+                }
+              }
+              p {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 17px;
+                color: gray;
+                padding: 10px 0;
+              }
+            }
+          }
+        }
+        .secu1 {
+          position: relative;
+          top: 20px;
+          .pr1 {
+            display: grid;
+            grid-template-rows: 100px 1fr;
+            grid-gap: 20px;
+            .secu-card {
+              border-bottom: 1px solid rgb(201, 196, 196);
+              h1 {
+                font-size: 27px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: normal;
+              }
+              p {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 18px;
+                color: #3897f0;
+                margin: 30px 0;
+              }
+            }
+            .pr-2 {
+              border-bottom: 1px solid rgb(201, 196, 196);
+              height: 180px;
+              // padding: 50px 0;
+              h1 {
+                font-size: 27px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: normal;
+              }
+
+              .pr-two {
+                padding: 10px 0;
+                display: grid;
+                grid-template-columns: 50px 2fr;
+                grid-template-rows: 1fr 1fr;
+                grid-gap: 20px;
+                align-items: center;
+
+                input {
+                  width: 20px;
+                  height: 35px;
+                }
+                h2 {
+                  font-size: 20px;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-weight: normal;
+                }
+              }
+              p {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 17px;
+                color: gray;
+              }
+            }
+          }
+        }
+        .secu2 {
+          margin: 50px 0;
+          .pri {
+            border-bottom: 1px solid rgb(201, 196, 196);
+            height: 120px;
+            h1 {
+              font-size: 27px;
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: normal;
+              padding: 20px 0;
+            }
+            p {
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 18px;
+              color: #3897f0;
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

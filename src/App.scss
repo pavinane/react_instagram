@@ -1,12 +1,73 @@
-.app {
-  width: 1000px;
-  margin: 0 auto;
-  // background: lightblue;
-  // height: 700px;
+body {
+  margin: 0;
+  padding: 0;
 }
-.upload {
-  width: 500px;
-  background: white;
-  margin: 0 auto;
-  height: 600px;
+.app {
+  // margin: 0 auto;
+  .navigation {
+    font-size: 15px;
+    text-transform: capitalize;
+    height: 38px;
+    background: rgb(184, 177, 177);
+
+    ul {
+      margin: 0;
+      padding: 0;
+      a {
+        float: left;
+        text-decoration: none;
+        li {
+          list-style-type: none;
+
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .h1 {
+    position: relative;
+    top: 200px;
+  }
+  .list {
+    position: relative;
+    top: 200px;
+  }
+  .toss {
+    position: relative;
+    top: 200px;
+    width: 225px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: capitalize;
+    p {
+      button {
+        height: 30px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: rgb(250, 55, 7);
+      }
+    }
+    .click {
+      button {
+        position: relative;
+        top: 50px;
+        width: 70px;
+        height: 30px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+  .head {
+    position: relative;
+    bottom: 200px;
+    .h2 {
+      position: relative;
+      top: 200px;
+    }
+  }
+  .color {
+    position: relative;
+    top: 200px;
+  }
 }

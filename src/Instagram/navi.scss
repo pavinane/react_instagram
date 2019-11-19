@@ -1,0 +1,68 @@
+.n-c {
+  border-bottom: 0.5px solid lightgray;
+  height: 100px;
+  .navi-card {
+    height: 83px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 1200px;
+    .insta-icons {
+      word-spacing: 0px;
+      justify-self: start;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 180px;
+      grid-gap: 10px;
+      text-align: center;
+      svg {
+        align-self: center;
+        position: relative;
+        top: 15px;
+      }
+      p {
+        font-size: 50px;
+        align-self: start;
+        font-weight: 10;
+      }
+      img {
+        align-self: center;
+        position: relative;
+        top: 7px;
+      }
+    }
+
+    .search {
+      i {
+        position: relative;
+        left: 98px;
+        font-size: 13px;
+        color: gray;
+      }
+      input {
+        width: 250px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid rgb(236, 233, 233);
+        outline: none;
+        background-color: #fafafa;
+      }
+      input[type="text"] {
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 15px;
+      }
+    }
+
+    .creaters {
+      width: 200px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-self: end;
+      font-size: 30px;
+      text-align: end;
+    }
+  }
+}
