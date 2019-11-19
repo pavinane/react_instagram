@@ -1,0 +1,145 @@
+.forget {
+  .f-ic {
+    // height: 100px;
+    border-bottom: 1px solid rgb(185, 182, 182);
+    .forget-icons {
+      word-spacing: 0px;
+      justify-self: start;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 180px;
+      grid-gap: 10px;
+      text-align: center;
+      // height: 200px;
+      //   align-items: center;
+      margin: 20px 300px;
+      svg {
+        align-self: center;
+        position: relative;
+        top: 15px;
+      }
+      p {
+        font-size: 50px;
+        align-self: start;
+        font-weight: 10;
+      }
+      img {
+        align-self: center;
+        position: relative;
+        top: 7px;
+      }
+    }
+  }
+  .f-p {
+    width: 500px;
+    margin: 5px auto;
+    border: 1px solid rgb(187, 182, 182);
+    height: 598px;
+    border-radius: 5px;
+    .lock {
+      width: 350px;
+      margin: 20px auto;
+      border-bottom: 1px solid rgb(202, 200, 200);
+      display: grid;
+      grid-gap: 20px;
+      .cir-lo {
+        border: 3px solid black;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        text-align: center;
+        margin: 0 auto;
+        i {
+          font-size: 80px;
+          padding: 15px 0;
+        }
+      }
+      h2 {
+        text-transform: capitalize;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 21px;
+        text-align: center;
+      }
+      p {
+        width: 350px;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        color: gray;
+        text-align: center;
+      }
+      .name-cd {
+        border: 1px solid gray;
+        width: 320px;
+        margin: 0 auto;
+        padding: 5px 10px;
+        border-radius: 10px;
+        height: 30px;
+        color: gray;
+        background: #efefef;
+        height: 40px;
+        cursor: not-allowed;
+        p {
+          text-align: inherit;
+          font-size: 12px;
+        }
+        h2 {
+          text-align: inherit;
+          font-size: 18px;
+          text-transform: none;
+          padding: 2px 0;
+          font-weight: normal;
+        }
+      }
+      button {
+        width: 350px;
+        margin: 0 auto;
+        height: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        color: #fff;
+        background: #3897f0;
+        font-weight: bold;
+        border: 1px solid gray;
+        border-radius: 10px;
+      }
+      span {
+        position: relative;
+        top: 12px;
+        width: 40px;
+        background: #fff;
+        left: 150px;
+        text-align: center;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+      }
+    }
+    .nm-cd1 {
+      text-transform: capitalize;
+      h2 {
+        text-align: center;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      button {
+        position: relative;
+        top: 100px;
+        left: -1px;
+        width: 501px;
+        height: 45px;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-transform: capitalize;
+        background: #fafafa;
+        border: 1px solid gray;
+        outline: none;
+      }
+    }
+  }
+  .g-3 {
+    position: relative;
+    top: 100px;
+  }
+}

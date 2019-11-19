@@ -11,6 +11,7 @@ import Login from "./Instagram/Login";
 import Edit from "./Instagram/Edit";
 import IGtv from "./Instagram/Igtv";
 import Seeall from "./Instagram/Seeall";
+import Forget from "./Instagram/Forget";
 
 class App extends React.Component {
   render() {
@@ -35,6 +36,7 @@ class App extends React.Component {
             <Route exact path="/edit/loginactivity" component={Edit} />
             <Route exact path="/edit/email/instagram" component={Edit} />
             <Route exact path="/edit/privacy/security" component={Edit} />
+            <Route exact path="/forget" component={Forget} />
             <Route exact path="/igtv" component={IGtv} />
           </Switch>
         </BrowserRouter>

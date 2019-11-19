@@ -195,10 +195,9 @@
           }
           .chn-names {
             display: grid;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
 
-            row-gap: 40px;
-            font-family: Arial, Helvetica, sans-serif;
+            row-gap: 20px;
+            font-family: Arial, s Helvetica, sans-serif;
 
             width: 450px;
             h2 {
@@ -213,6 +212,8 @@
               border: 1px solid rgb(196, 189, 189);
               border-radius: 5px;
               outline: none;
+              position: relative;
+              top: 20px;
             }
           }
         }
@@ -234,13 +235,16 @@
             border: 0.5px solid silver;
             border-radius: 10px;
           }
-          h2 {
-            position: relative;
-            top: 30px;
-            font-family: Arial, Helvetica, sans-serif;
-            text-transform: capitalize;
-            font-size: 18px;
-            color: #3897f0;
+          a {
+            text-decoration: none;
+            h2 {
+              position: relative;
+              top: 30px;
+              font-family: Arial, Helvetica, sans-serif;
+              text-transform: capitalize;
+              font-size: 18px;
+              color: #3897f0;
+            }
           }
         }
       }
@@ -475,28 +479,51 @@
           padding: 30px 0;
           font-family: Arial, Helvetica, sans-serif;
         }
-        .location {
+        .loc-map {
           display: grid;
-          grid-template-columns: 50px 3fr 1fr;
+          grid-template-columns: 4fr 50px;
           border-bottom: 1px solid rgb(192, 191, 191);
-          align-items: center;
-          height: 100px;
-          i {
-            color: gray;
-            font-size: 30px;
-          }
-          .lov-names {
-            p {
-              font-family: Arial, Helvetica, sans-serif;
-              font-size: 22px;
+          .location {
+            display: grid;
+            grid-template-columns: 50px 3fr;
+
+            align-items: center;
+            height: 100px;
+            i {
+              color: gray;
+              font-size: 30px;
             }
-            small {
-              font-size: 17px;
-              font-family: Arial, Helvetica, sans-serif;
-              float: left;
+            .lov-names {
+              p {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 22px;
+              }
+              small {
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                float: left;
+                color: gray;
+              }
+            }
+          }
+          .photo {
+            align-self: center;
+            i {
               color: gray;
             }
+            i.fas.fa-chevron-up {
+              position: relative;
+              top: 30px;
+            }
+            iframe {
+              position: relative;
+              right: 650px;
+              margin-top: 70px;
+            }
           }
+        }
+        .loc-map:hover {
+          background: rgb(239, 240, 239);
         }
       }
       .privacy {

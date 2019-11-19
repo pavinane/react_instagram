@@ -98,29 +98,97 @@ const Edi1 = () => (
     <Edi />
   </>
 );
-const Changpwd = () => (
-  <div className="ch-ps">
-    <div className="chnge">
-      <div className="chnge-pr">
-        <img src={prfimg} alt="" />
-        <h2>old password</h2>
-        <h2>new password</h2>
-        <h2>confirm new password</h2>
-      </div>
-      <div className="chn-names">
-        <h2>nanepavi97</h2>
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-      </div>
-    </div>
-    <div className="chn-but">
-      <button type="button">change password</button>
-      <h2>forget password</h2>
-    </div>
-  </div>
-);
+const passwordState = {
+  password1: "",
+  password2: "",
+  password3: ""
+};
+class Changpwd extends React.Component {
+  state = {
+    passwordState
+    // passwordError: ""
+  };
+  handleChange = e => {
+    console.log(e.target.value);
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  };
 
+  validate = () => {
+    let passwordError = "";
+
+    const { password1, password2, password3 } = this.state;
+
+    if (password1.length <= 5) {
+      passwordError = "Password should be between 5 and 10 characters";
+    }
+    if (password2.length <= 5) {
+      passwordError = "Password should be between 5 and 10 characters";
+    }
+    if (password3.length <= 5) {
+      passwordError = "Password should be between 5 and 10 characters";
+    }
+
+    if (passwordError) {
+      this.setState({ passwordError });
+      return false;
+    }
+    return true;
+  };
+  handleSubmit = e => {
+    e.preventDefault();
+
+    console.log(this.state);
+  };
+  render() {
+    const { password1, password2, password3, passwordError } = this.state;
+    return (
+      <div className="ch-ps">
+        <form onSubmit={this.handleSubmit}>
+          <div className="chnge">
+            <div className="chnge-pr">
+              <img src={prfimg} alt="" />
+              <h2>old password</h2>
+              <h2>new password</h2>
+              <h2>confirm new password</h2>
+            </div>
+            <div className="chn-names">
+              <h2>nanepavi97</h2>
+              <input
+                name="password1"
+                type="password"
+                value={password1}
+                onChange={this.handleChange}
+              />
+              <p style={{ color: "red" }}>{passwordError}</p>
+              <input
+                name="password2"
+                type="password"
+                value={password2}
+                onChange={this.handleChange}
+              />
+              <p style={{ color: "red" }}>{passwordError}</p>
+              <input
+                name="password3"
+                type="password"
+                value={password3}
+                onChange={this.handleChange}
+              />
+              <p style={{ color: "red" }}>{passwordError}</p>
+            </div>
+          </div>
+          <div className="chn-but">
+            <button type="submit">change password</button>
+            <Link to="/Forget">
+              <h2>forget password</h2>
+            </Link>
+          </div>
+        </form>
+      </div>
+    );
+  }
+}
 const Appsweb = () => (
   <div className="app-web">
     <h1>Apps and Website</h1>
@@ -210,9 +278,10 @@ const Login = () => (
     <Lia
       la={[
         {
-          p: "pavi",
+          p: "Vellore",
           s: "Active now",
-          mo: "This Linux"
+          mo: "This Linux",
+          mp: ""
         },
         {
           p: "Chennai,India",
@@ -242,21 +311,55 @@ const Login = () => (
 const Lia = ({ la }) => (
   <div className="li-act">
     {la.map(li => (
-      <div className="location">
-        <i class="fas fa-map-marker"></i>
+      <div className="loc-map">
+        <div className="location">
+          <i class="fas fa-map-marker"></i>
 
-        <div class="lov-names">
-          <p>{li.p}</p>
-          <small>
-            {li.s} . <span>{li.mo}</span>
-          </small>
+          <div class="lov-names">
+            <p>{li.p}</p>
+            <small>
+              {li.s} . <span>{li.mo}</span>
+            </small>
+          </div>
+
+          {/* <i class="fas fa-chevron-down"></i> */}
         </div>
-
-        <i class="fas fa-chevron-down"></i>
+        <Loca />
       </div>
     ))}
   </div>
 );
+
+class Loca extends React.Component {
+  state = {
+    photoDisplay: false
+  };
+  showPhoto = () =>
+    this.setState(({ photoDisplay }) => ({ photoDisplay: !photoDisplay }));
+
+  render() {
+    const { photoDisplay } = this.state;
+    return (
+      <div className="photo">
+        <i
+          className={photoDisplay ? "fas fa-chevron-up" : "fas fa-chevron-down"}
+          onClick={this.showPhoto}
+        ></i>
+        {photoDisplay && (
+          <iframe
+            title="dd"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62215.0764105299!2d79.11655597062357!3d12.94352677353644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad39a0f37f3acf%3A0x7076bf027ae0eb77!2sAtsemicolon%20Technologies%20Training%20Academy!5e0!3m2!1sen!2sin!4v1566747275881!5m2!1sen!2sin"
+            width="650"
+            height="200"
+            frameBorder="0"
+            style={{ border: 0 }}
+            allowFullScreen=""
+          />
+        )}
+      </div>
+    );
+  }
+}
 
 const Privacy = () => (
   <div className="privacy">
