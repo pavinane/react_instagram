@@ -19,7 +19,7 @@ class App extends React.Component {
       <div className="app">
         <BrowserRouter>
           <Switch>
-            <Route exact path="/mainpage" component={Instagram} />
+            <Route exact path="/" component={Instagram} />
             <Route exact path="/profile" component={Profile} />
             <Route exact path="/profile/igtv" component={Profile} />
             <Route exact path="/profile/saved" component={Profile} />
@@ -27,7 +27,7 @@ class App extends React.Component {
             <Route exact path="/seeall" component={Seeall} />
             <Route exact path="/discover" component={Discover} />
             <Route exact path="/detailpost" component={Detailpost} />
-            <Route exact path="/" component={Login} />
+            <Route exact path="/login" component={Login} />
             <Route exact path="/edit" component={Edit} />
             <Route exact path="/edit/changepassword" component={Edit} />
             <Route exact path="/edit/appswebsite" component={Edit} />
